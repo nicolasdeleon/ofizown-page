@@ -1,0 +1,104 @@
+:root {
+    --primary: #dd7600;
+    --white: #ffffff;
+}
+.btn {
+    font-family: sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+/* Button Colors and Styles */
+.btn--main {
+    background: var(--primary);
+    color: #ccc;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    transition: .6s;
+    overflow: hidden;
+    align-self: end;
+    margin-top: 4px;
+}
+.btn--main a {
+    color: #ccc;
+    transition: .6s;
+    overflow: hidden;
+    align-self: end;
+    margin-top: 4px;
+    text-decoration: none;
+}
+.btn--main:focus {
+    outline: none;
+}
+.btn--main:before {
+    content: "";
+    display: block;
+    background: transparent;
+    opacity: .5s;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+.btn--main:after {
+    content: "";
+    display: block;
+    background: var(--primary);
+    opacity: 0;
+    width: 30px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transform: translate(-100px) skewX(-15deg);
+}
+.btn--main:hover {
+    background: transparent;
+
+}
+.btn--main:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+.btn--main:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .1;
+    transition: .7s;
+}
+.btn--primary--solid {
+    border-radius: 10px;
+    color: var(--white);
+    border: none;
+    transition: transform 0.3s ease;
+}
+.btn--primary--solid:hover {
+    transform: translateY(-3px);
+}
+.btn--primary--outline {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.btn--primary--outline:hover {
+    
+    color: var(--black);
+    background: var(--primary);
+   /*transform: translateY(-3px);*/
+}
+
+/* Button Size */
+.btn--medium {
+    padding: 10px 20px;
+    font-size: 18px;
+
+}
+.btn--small {
+    padding: 15px 30px;
+    font-size: 20px;
+    
+}

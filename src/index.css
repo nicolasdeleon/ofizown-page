@@ -1,3 +1,12 @@
+
+@font-face {
+  font-family: "core-sans-c-regular";
+  src: url("./res/core-sans-c/CoreSansC-45Regular.ttf");
+}
+@font-face {
+  font-family: "core-sans-c-medium";
+  src: url("./res/core-sans-c/CoreSansC-55Medium.ttf");
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
