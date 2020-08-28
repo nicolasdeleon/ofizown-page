@@ -29,7 +29,6 @@
   width: 58%;
   min-height: 100%;
   border-bottom-left-radius: 20pt;
-  position: relative;
   overflow: hidden;
   height: auto;
   display: flex;
@@ -44,6 +43,12 @@
   font-family: core-sans-c-regular;
   color: black;
   font-size: x-large;
+  text-align: center;
+}
+.home-l-catchfrase {
+  font-family: core-sans-c-regular;
+  color: black;
+  font-size: medium;
   text-align: center;
 }
 .whatsapp-float {
@@ -66,7 +71,7 @@
 .find-your-space-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   width: 100%;
   height: 100vh;
@@ -77,20 +82,33 @@
   min-height: 50%;
   margin-top: 2rem;
   border-radius: 15px;
-  position: relative;
   overflow: hidden;
   height: auto;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
+.upper-img-text {
+  color: white;
+  margin-left: 120px;
+  font-size: xxx-large;
+  margin-bottom: 45px;
+  font-family: core-sans-c-medium;
+}
 .find-your-space-info-container {
   width: 98%;
   height: 50%;
   max-height: 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
+}
+.find-your-space-text {
+  font-family: core-sans-c-medium;
+  margin-left: 120px;
+  font-size: larger;
+  text-align: left;
+  color: #0f0f3d;
 }
 .offer-your-space-info-container {
   width: 98%;
@@ -101,18 +119,39 @@
   justify-content: space-around;
   flex-direction: column;
 }
+.find-space-button {
+  margin-left: 120px;
+  margin-top: 45px;
+}
 .offer-img {
   background: url("../res/images/offi3.jpg") center/cover no-repeat;
   width: 98%;
   min-height: 50%;
   margin-top: 2rem;
   border-radius: 15px;
-  position: relative;
   overflow: hidden;
   height: auto;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+.offer-img-text {
+  color: white;
+  margin-right: 120px;
+  font-size: xxx-large;
+  margin-bottom: 45px;
+  font-family: core-sans-c-medium;
+}
+.offer-your-space-text {
+  font-family: core-sans-c-medium;
+  margin-right: 120px;
+  font-size: larger;
+  text-align: right;
+  color: #0f0f3d;
+}
+.offer-space-button {
+  margin-right: 120px;
+  margin-top: 45px;
 }
 .footer-container {
   height: 15vh;
@@ -126,7 +165,7 @@
   background-color: #fb903e;
   position: absolute;
   left: 0px;
-  margin-top: 200px;
+  margin-top: 220px;
   border-radius: 1px;
 }
 .blue-block {
@@ -136,12 +175,67 @@
   background-color: #1e6097;
   position: absolute;
   right: 0px;
-  margin-top: 200px;
+  margin-top: 215px;
   border-radius: 1px;
 }
 
 @media screen and (max-width: 906px) {
   .right-container {
     display: none;
+  }
+  .upper-img {
+    justify-content: center;
+    min-height: 30%;
+  }
+  .upper-img-text {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .find-your-space-text {
+    font-size: medium;
+    text-align: center;
+    margin-left: 0;
+  }
+  .find-your-space-info-container {
+    margin-bottom: 100px;
+  }
+  .orange-block {
+    display: none;
+  }
+  .blue-block {
+    display: none;
+  }
+  .find-space-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 20px
+  }
+  .offer-img {
+    justify-content: center;
+    min-height: 30%;
+  }
+  .offer-img-text {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .offer-your-space-text {
+    font-size: medium;
+    text-align: center;
+    margin-right: 0;
+  }
+  .offer-your-space-info-container {
+  margin-bottom: 100px;
+  }
+  .offer-space-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
   }
 }

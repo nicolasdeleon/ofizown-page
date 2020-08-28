@@ -1,8 +1,6 @@
 import React from 'react';
 import './css/App.css';
-import './components/Wallpaper';
-import Wallpaper from './components/Wallpaper';
-import {NavBar, NavItem} from './components/NavBar';
+import {NavBar} from './components/NavBar';
 import Button from './components/Button';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -10,14 +8,13 @@ import { HashLink as Link } from 'react-router-hash-link';
 function App() {
   return (
     <div>
-        <NavBar>
-        </NavBar>
+        <NavBar/>
         <div className="home-container">
           <div className="left-container">
             <div style={{"marginTop": "8px"}}>
               <p className="home-l-text">Trabajá en casa</p>
               <p className="home-l-text">de un vecino</p>
-              <p>Espacios de co-working cercanos, flexibles y accesibles</p>
+              <p className="home-l-catchfrase">Espacios de co-working cercanos, flexibles y accesibles</p>
             </div>
             <div style={{"marginTop": "2rem", "display": "flex"}}>
               <div style={{"marginRight": "1rem"}}>
@@ -43,43 +40,31 @@ function App() {
         </div>
         <div id="find-your-space" className="find-your-space-container">
           <div className="upper-img">
-            <p style={{
-              "color": "white",
-              "margin-left": "120px",
-              "font-size": "xxx-large",
-              "margin-bottom": "45px"
-            }}>reunite con tu equipo.</p>
+            <p className="upper-img-text">reunite con tu equipo.</p>
           </div>
           <div className="orange-block"/>
           <div className="find-your-space-info-container">
-            <p style={{"margin-left": "120px", "marginTop": "45px", "font-size": "larger", "textAlign": "left"
-            }}>Encontrá un lugar cómodo y con buen WiFi para tener un dia productivo de trabajo con tu equipo u otros profesionales y estudiantes del barrio. Si tenés una empresa, reservá un espacio exclusivo para tus colaboradores sin compromiso de permanencia. Vos elegís el día, la zona y Ofizown te lo consigue.</p>
-            <div style={{"margin-left": "120px", "marginTop": "45px"}}>
+            <p className="find-your-space-text">Encontrá un lugar cómodo y con buen WiFi para tener un dia productivo de trabajo con tu equipo u otros profesionales y estudiantes del barrio. Si tenés una empresa, reservá un espacio exclusivo para tus colaboradores sin compromiso de permanencia. Vos elegís el día, la zona y Ofizown te lo consigue.</p>
+            <div className="find-space-button">
               <Button buttonStyle="btn--third" onClick={() => {
                 window.location.href = 'https://docs.google.com/forms/d/10C2qdrpiS3Sa_UOGh-Uj4OsSwJrmHhSNQt1EmixrfwA/prefill';
                 return null;
-              }}>Encontrá tu espacio</Button>
+              }}><p style={{fontFamily:"core-sans-c-medium"}}>Encontrá tu espacio</p></Button>
             </div>
           </div>
         </div>
         <div id="offer-your-space" className="find-your-space-container">
           <div className="offer-img">
-            <p style={{
-              "color": "white",
-              "margin-right": "120px",
-              "font-size": "xxx-large",
-              "margin-bottom": "45px"
-            }}>convertite en ofizowner.</p>
+            <p className="offer-img-text">convertite en ofizowner.</p>
           </div>
           <div className="blue-block"/>
           <div className="offer-your-space-info-container">
-            <p style={{"margin-right": "120px", "marginTop": "45px", "font-size": "larger", "textAlign": "right"
-              }}>Transformá un ambiente de tu casa en un espacio de trabajo y ofrecel en Ofizown para generar ingresos. Vos determinas las reglas del lugar, estableces la disponibilidad y aprobás tus vicitas.</p>
-            <div style={{"margin-right": "120px", "marginTop": "45px"}}>
+            <p className="offer-your-space-text">Transformá un ambiente de tu casa en un espacio de trabajo y ofrecelo en Ofizown para generar ingresos. Vos determinas las reglas del lugar, estableces la disponibilidad y aprobás tus vicitas.</p>
+            <div className="offer-space-button">
               <Button buttonStyle="btn--third" onClick={() => {
                 window.location.href = "https://docs.google.com/forms/d/1DbVzTrGAjct6ppACyB1tO_ybWou4Ze-Ys-Rgkr5iXOk/prefill";
                 return null;
-              }}>Ofrecé tu espacio</Button>
+              }}><p style={{"fontFamily":"core-sans-c-medium"}}>Ofrecé tu espacio</p></Button>
             </div>
           </div>
         </div>
