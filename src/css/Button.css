@@ -1,17 +1,15 @@
-:root {
-    --primary: #dd7600;
-    --white: #ffffff;
-}
 .btn {
     font-family: sans-serif;
     font-weight: 400;
     cursor: pointer;
 }
 /* Button Colors and Styles */
+
+/* Main Button */ 
 .btn--main {
-    background: var(--primary);
+    background: var(--mainOrange);
     color: #ccc;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--mainOrange);
     border-radius: 10px;
     transition: .6s;
     overflow: hidden;
@@ -44,7 +42,7 @@
 .btn--main:after {
     content: "";
     display: block;
-    background: var(--primary);
+    background: var(--mainOrange);
     opacity: 0;
     width: 30px;
     height: 100%;
@@ -67,9 +65,137 @@
     opacity: .1;
     transition: .7s;
 }
+/* End Main Button */ 
+
+/* Secondary Button */ 
+
+.btn--secondary {
+    background: var(--mainBlue);
+    color: #ccc;
+    border: 1px solid var(--mainBlue);
+    border-radius: 10px;
+    transition: .6s;
+    overflow: hidden;
+    align-self: end;
+    margin-top: 4px;
+}
+.btn--secondary a {
+    color: #ccc;
+    transition: .6s;
+    overflow: hidden;
+    align-self: end;
+    margin-top: 4px;
+    text-decoration: none;
+}
+.btn--secondary:focus {
+    outline: none;
+}
+.btn--secondary:before {
+    content: "";
+    display: block;
+    background: transparent;
+    opacity: .5s;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+.btn--secondary:after {
+    content: "";
+    display: block;
+    background: var(--mainBlue);
+    opacity: 0;
+    width: 30px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transform: translate(-100px) skewX(-15deg);
+}
+.btn--secondary:hover {
+    background: transparent;
+
+}
+.btn--secondary:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+.btn--secondary:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .1;
+    transition: .7s;
+}
+
+/* End Secondary Button */ 
+
+/* Thrid Button */ 
+.btn--third {
+    background: var(--blackBlue);
+    color: #ccc;
+    border: 1px solid var(--blackBlue);
+    border-radius: 10px;
+    transition: .6s;
+    overflow: hidden;
+    align-self: end;
+    margin-top: 4px;
+}
+.btn--third a {
+    color: #ccc;
+    transition: .6s;
+    overflow: hidden;
+    align-self: end;
+    margin-top: 4px;
+    text-decoration: none;
+}
+.btn--third:focus {
+    outline: none;
+}
+.btn--third:before {
+    content: "";
+    display: block;
+    background: transparent;
+    opacity: .5s;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transform: translate(-130px) skewX(-15deg);
+}
+.btn--third:after {
+    content: "";
+    display: block;
+    background: var(--blackBlue);
+    opacity: 0;
+    width: 30px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transform: translate(-100px) skewX(-15deg);
+}
+.btn--third:hover {
+    background: transparent;
+
+}
+.btn--third:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+.btn--third:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .1;
+    transition: .7s;
+}
+/* End Third Button */ 
+
 .btn--primary--solid {
     border-radius: 10px;
-    color: var(--white);
+    color: var(--mainWhite);
     border: none;
     transition: transform 0.3s ease;
 }
@@ -79,15 +205,15 @@
 .btn--primary--outline {
     background-color: transparent;
     border-radius: 10px;
-    border: 2px solid var(--primary);
-    color: var(--primary);
+    border: 2px solid var(--mainOrange);
+    color: var(--mainOrange);
     transition: transform 0.3s ease;
 }
 
 .btn--primary--outline:hover {
     
     color: var(--black);
-    background: var(--primary);
+    background: var(--mainOrange);
    /*transform: translateY(-3px);*/
 }
 

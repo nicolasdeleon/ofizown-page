@@ -4,6 +4,8 @@ import "../css/Button.css"
 // available styles for my button
 const STYLES = [
     "btn--main",
+    "btn--secondary",
+    "btn--third",
     "btn--primary--solid",
     "btn--warning--solid",
     "btn--danger--solid",
@@ -35,10 +37,8 @@ export const Button = ({
         <button 
         disabled={disabled}
         className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
-        onClick={onClick} type={type}
-        >
+        onClick={onClick} type={type}>
           {children}
-
         </button>
     )
 }
