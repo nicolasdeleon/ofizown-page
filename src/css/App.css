@@ -9,6 +9,15 @@
   font-family: core-sans-c-regular, Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
   }
+.layer {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 91vh;
+}
 .home-container {
   display: flex;
   align-items: center;
@@ -23,6 +32,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
 }
 .right-container {
   background: url("../res/images/foto-desk-1.jpg") center/cover no-repeat;
@@ -40,15 +55,24 @@
   height: auto;
 }
 .home-l-text {
+  font-family: core-sans-c-medium;
+  color: rgb(32, 32, 32);
+  font-size: xxx-large;
+  text-align: center;
+}
+.home-l-text-stroke {
   font-family: core-sans-c-regular;
-  color: black;
-  font-size: x-large;
+  color: rgb(32, 32, 32);
+  font-size: xxx-large;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(32, 32, 32);
   text-align: center;
 }
 .home-l-catchfrase {
   font-family: core-sans-c-regular;
-  color: black;
-  font-size: medium;
+  color: var(--blackBlue);
+  font-size: large;
   text-align: center;
 }
 .whatsapp-float {
@@ -180,8 +204,27 @@
 }
 
 @media screen and (max-width: 906px) {
+  .layer{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
   .right-container {
     display: none;
+  }
+  .home-container  {
+    background: url("../res/images/foto-desk-1.jpg") center/cover no-repeat;
+  }
+  .home-l-text {
+    color: var(--mainWhite);
+  }
+  .home-l-text-stroke {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
+    font-size: xxx--large;
+    color: var(--mainWhite);
+  }
+  .home-l-catchfrase {
+    color: var(--mainWhite);
   }
   .upper-img {
     justify-content: center;

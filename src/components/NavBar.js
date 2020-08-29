@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/NavBar.css';
 
-function NavBar(props) {
+export default function NavBar(props) {
     return (
         <nav className="navbar">
             <div className="nav-logo">
@@ -11,19 +11,3 @@ function NavBar(props) {
         </nav>
     );
 }
-
-function NavItem(props) {
-    return (
-        <li className="nav-item">
-            <a href="#" className="icon-button">
-                {props.icon}
-            </a>
-        </li>
-    );
-}
-
-export {
-    NavBar,
-    NavItem,
-}
-

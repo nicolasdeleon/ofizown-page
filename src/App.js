@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/App.css';
-import {NavBar} from './components/NavBar';
+import NavBar from './components/NavBar';
 import Button from './components/Button';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -10,33 +10,37 @@ function App() {
     <div>
         <NavBar/>
         <div className="home-container">
+        <div className="layer">
           <div className="left-container">
-            <div style={{"marginTop": "8px"}}>
-              <p className="home-l-text">Trabajá en casa</p>
-              <p className="home-l-text">de un vecino</p>
-              <p className="home-l-catchfrase">Espacios de co-working cercanos, flexibles y accesibles</p>
-            </div>
-            <div style={{"marginTop": "2rem", "display": "flex"}}>
-              <div style={{"marginRight": "1rem"}}>
-              <Link smooth to='#find-your-space'>
-                <Button>
-                  <p style={{fontFamily:"core-sans-c-medium"}}>Busco espacio</p>
-                </Button>
-              </Link>
+            <div className="home-text-container">
+              <div style={{"marginTop": "8px"}}>
+                <p className="home-l-text">Trabajá en casa</p>
+                <p className="home-l-text-stroke">de un vecino</p>
+                <p className="home-l-catchfrase">Espacios de co-working cercanos, flexibles y accesibles</p>
               </div>
-              <div>
-                <Link smooth to='#offer-your-space'>
-                  <Button buttonStyle="btn--secondary">
-                    <p style={{fontFamily:"core-sans-c-medium"}}>Ofrezco espacio</p>
+              <div style={{"marginTop": "2rem", "display": "flex"}}>
+                <div style={{"marginRight": "1rem"}}>
+                <Link smooth to='#find-your-space'>
+                  <Button>
+                    <p style={{fontFamily:"core-sans-c-medium"}}>Busco espacio</p>
                   </Button>
                 </Link>
-              </div>
-              </div>
-            <a href="https://wa.me/5491162355090?text=¿Cómo%20funciona%20el%20servicio?" className="whatsapp-float">
-              <i className="fa fa-whatsapp my-whatsapp-float"></i>
-            </a>
+                </div>
+                <div>
+                  <Link smooth to='#offer-your-space'>
+                    <Button buttonStyle="btn--secondary">
+                      <p style={{fontFamily:"core-sans-c-medium"}}>Ofrezco espacio</p>
+                    </Button>
+                  </Link>
+                </div>
+                </div>
+              <a href="https://wa.me/5491162355090?text=¿Cómo%20funciona%20el%20servicio?" className="whatsapp-float">
+                <i className="fa fa-whatsapp my-whatsapp-float"></i>
+              </a>
+            </div>
           </div>
           <div className="right-container"/>
+        </div>
         </div>
         <div id="find-your-space" className="find-your-space-container">
           <div className="upper-img">
