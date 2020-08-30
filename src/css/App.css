@@ -36,8 +36,8 @@
 .home-text-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 400px;
+  min-width: 290px;
 }
 .right-container {
   background: url("../res/images/foto-desk-1.jpg") center/cover no-repeat;
@@ -58,7 +58,7 @@
   font-family: core-sans-c-medium;
   color: rgb(32, 32, 32);
   font-size: xxx-large;
-  text-align: center;
+  text-align: left;
 }
 .home-l-text-stroke {
   font-family: core-sans-c-regular;
@@ -67,13 +67,13 @@
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(32, 32, 32);
-  text-align: center;
+  text-align: left;
 }
 .home-l-catchfrase {
   font-family: core-sans-c-regular;
   color: var(--blackBlue);
   font-size: large;
-  text-align: center;
+  text-align: left;
 }
 .whatsapp-float {
   position: fixed;
@@ -207,24 +207,33 @@
   .layer{
     background-color: rgba(0, 0, 0, 0.5);
   }
+  .left-container{
+    width: 95%;
+  }
   .right-container {
     display: none;
   }
   .home-container  {
     background: url("../res/images/foto-desk-1.jpg") center/cover no-repeat;
   }
+  .home-text-container {
+    align-items: center;
+  }
   .home-l-text {
     color: var(--mainWhite);
+    text-align: center;
   }
   .home-l-text-stroke {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
     font-size: xxx--large;
+    text-align: center;
     color: var(--mainWhite);
   }
   .home-l-catchfrase {
     color: var(--mainWhite);
+    text-align: center;
   }
   .upper-img {
     justify-content: center;
@@ -237,11 +246,12 @@
   }
   .find-your-space-text {
     font-size: medium;
-    text-align: center;
+    text-align: left;
     margin-left: 0;
   }
   .find-your-space-info-container {
     margin-bottom: 100px;
+    width: 95%;
   }
   .orange-block {
     display: none;
@@ -267,11 +277,12 @@
   }
   .offer-your-space-text {
     font-size: medium;
-    text-align: center;
+    text-align: left;
     margin-right: 0;
   }
   .offer-your-space-info-container {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
+    width: 95%;
   }
   .offer-space-button {
     display: flex;
