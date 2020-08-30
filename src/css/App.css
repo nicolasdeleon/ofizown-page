@@ -57,13 +57,13 @@
 .home-l-text {
   font-family: core-sans-c-medium;
   color: rgb(32, 32, 32);
-  font-size: xxx-large;
+  font-size: 48px;
   text-align: left;
 }
 .home-l-text-stroke {
   font-family: core-sans-c-regular;
   color: rgb(32, 32, 32);
-  font-size: xxx-large;
+  font-size: 48px;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(32, 32, 32);
@@ -116,7 +116,7 @@
 .upper-img-text {
   color: white;
   margin-left: 120px;
-  font-size: xxx-large;
+  font-size: 48px;
   margin-bottom: 45px;
   font-family: core-sans-c-medium;
 }
@@ -164,7 +164,7 @@
 .offer-img-text {
   color: white;
   margin-right: 120px;
-  font-size: xxx-large;
+  font-size: 48px;
   margin-bottom: 45px;
   font-family: core-sans-c-medium;
 }
@@ -229,7 +229,7 @@
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.5);
-    font-size: xxx--large;
+    font-size: 48px;
     text-align: center;
     color: var(--mainWhite);
   }
