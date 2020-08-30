@@ -104,6 +104,7 @@
   background: url("../res/images/foto-desk-2.jpg") center/cover no-repeat;
   width: 98%;
   min-height: 50%;
+  min-width: 350px;
   margin-top: 2rem;
   border-radius: 15px;
   overflow: hidden;
@@ -151,6 +152,7 @@
   background: url("../res/images/offi3.jpg") center/cover no-repeat;
   width: 98%;
   min-height: 50%;
+  min-width: 350px;
   margin-top: 2rem;
   border-radius: 15px;
   overflow: hidden;
@@ -291,5 +293,13 @@
     margin-right: 0;
     margin-top: 20px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .find-your-space-text {
+    font-size: small;
+    text-align: left;
+    margin-left: 0;
   }
 }

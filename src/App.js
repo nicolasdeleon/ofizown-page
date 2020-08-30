@@ -63,7 +63,7 @@ function App() {
           </div>
           <div className="blue-block"/>
           <div className="offer-your-space-info-container">
-            <p className="offer-your-space-text">Transformá un ambiente de tu casa en un espacio de trabajo y ofrecelo en Ofizown para generar ingresos. Vos determinas las reglas del lugar, estableces la disponibilidad y aprobás tus vicitas.</p>
+            <p className="offer-your-space-text">Transformá un ambiente de tu casa en un espacio de trabajo y ofrecelo en Ofizown para generar ingresos. Vos determinas las reglas del lugar, estableces la disponibilidad y vos aprobás tus visitas.</p>
             <div className="offer-space-button">
               <Button buttonStyle="btn--third" onClick={() => {
                 window.location.href = "https://forms.gle/K9jfy31pUg5haqZC8";
