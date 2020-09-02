@@ -44,7 +44,9 @@ function App() {
         </div>
         <div id="find-your-space" className="find-your-space-container">
           <div className="upper-img">
-            <p className="upper-img-text">reunite con tu equipo.</p>
+            <div className="layer-upper-img">
+              <p className="upper-img-text">reunite con tu equipo.</p>
+            </div>
           </div>
           <div className="orange-block"/>
           <div className="find-your-space-info-container">
@@ -59,7 +61,9 @@ function App() {
         </div>
         <div id="offer-your-space" className="find-your-space-container">
           <div className="offer-img">
-            <p className="offer-img-text">convertite en ofizowner.</p>
+            <div className="layer-offer-img">
+              <p className="offer-img-text">convertite en ofizowner.</p>
+            </div>
           </div>
           <div className="blue-block"/>
           <div className="offer-your-space-info-container">

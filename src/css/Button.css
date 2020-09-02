@@ -211,10 +211,8 @@
 }
 
 .btn--primary--outline:hover {
-    
     color: var(--black);
     background: var(--mainOrange);
-   /*transform: translateY(-3px);*/
 }
 
 /* Button Size */
@@ -226,5 +224,4 @@
 .btn--small {
     padding: 15px 30px;
     font-size: 20px;
-    
 }

@@ -113,6 +113,19 @@
   justify-content: flex-start;
   align-items: flex-end;
 }
+.layer-upper-img {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 100%;
+  min-width: 350px;
+  margin-top: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 .upper-img-text {
   color: white;
   margin-left: 120px;
@@ -152,6 +165,19 @@
   background: url("../res/images/offi3.jpg") center/cover no-repeat;
   width: 98%;
   min-height: 50%;
+  min-width: 350px;
+  margin-top: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.layer-offer-img {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 100%;
   min-width: 350px;
   margin-top: 2rem;
   border-radius: 15px;
@@ -241,6 +267,9 @@
     justify-content: center;
     min-height: 30%;
   }
+  .layer-upper-img {
+    justify-content: center;
+  }
   .upper-img-text {
     margin-left: 0;
     text-align: center;
@@ -271,6 +300,9 @@
   .offer-img {
     justify-content: center;
     min-height: 30%;
+  }
+  .layer-offer-img {
+    justify-content: center;
   }
   .offer-img-text {
     margin-right: 0;
