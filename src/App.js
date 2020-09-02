@@ -50,7 +50,7 @@ function App() {
           </div>
           <div className="orange-block"/>
           <div className="find-your-space-info-container">
-            <p className="find-your-space-text">Encontrá un lugar cómodo y con buen WiFi para tener un dia productivo de trabajo con tu equipo u otros profesionales y estudiantes del barrio. Si tenés una empresa, reservá un espacio exclusivo para tus colaboradores sin compromiso de permanencia. Vos elegís el día, la zona y Ofizown te lo consigue.</p>
+            <p className="find-your-space-text">Encontrá un lugar cómodo y con buen WiFi para tener un dia productivo de trabajo con tu equipo u otros profesionales y estudiantes del barrio. Si tenés una empresa, reservá un espacio exclusivo para tus colaboradores sin compromiso de permanencia. <b>Vos elegís el día, la zona y Ofizown te lo consigue.</b></p>
             <div className="find-space-button">
               <Button buttonStyle="btn--third" onClick={() => {
                 window.location.href = "https://forms.gle/CYTQFNMg8h62iYW39";
@@ -67,7 +67,8 @@ function App() {
           </div>
           <div className="blue-block"/>
           <div className="offer-your-space-info-container">
-            <p className="offer-your-space-text">Transformá un ambiente de tu casa en un espacio de trabajo y ofrecelo en Ofizown para generar ingresos. Vos determinas las reglas del lugar, estableces la disponibilidad y vos aprobás tus visitas.</p>
+            <p className="offer-your-space-text">Transformá un ambiente de tu casa en un espacio de trabajo y ofrecelo en Ofizown para generar ingresos. 
+            <b>Vos determinás las reglas del lugar, establecés la disponibilidad y aprobás tus visitas.</b></p>
             <div className="offer-space-button">
               <Button buttonStyle="btn--third" onClick={() => {
                 window.location.href = "https://forms.gle/K9jfy31pUg5haqZC8";

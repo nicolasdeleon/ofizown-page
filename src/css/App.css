@@ -142,7 +142,7 @@
   flex-direction: column;
 }
 .find-your-space-text {
-  font-family: core-sans-c-medium;
+  font-family: core-sans-c-light;
   margin-left: 120px;
   font-size: larger;
   text-align: left;
@@ -195,7 +195,7 @@
   font-family: core-sans-c-medium;
 }
 .offer-your-space-text {
-  font-family: core-sans-c-medium;
+  font-family: core-sans-c-light;
   margin-right: 120px;
   font-size: larger;
   text-align: right;

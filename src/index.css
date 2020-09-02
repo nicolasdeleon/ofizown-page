@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: "core-sans-c-thin";
+  src: url("./res/core-sans-c/CoreSansC-15Thin.ttf");
+}
+@font-face {
+  font-family: "core-sans-c-light";
+  src: url("./res/core-sans-c/CoreSansC-25ExtraLight.ttf");
+}
 @font-face {
   font-family: "core-sans-c-regular";
   src: url("./res/core-sans-c/CoreSansC-45Regular.ttf");
